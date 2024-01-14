@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <h1>Search</h1>
-      <div>Search result(s): {resultCount}</div>
+      <div>result(s): {resultCount}</div>
       <SearchComponent onSearch={searchCriteriaItem} />
       <br />
       <Transaction {...{ header, items }} />
