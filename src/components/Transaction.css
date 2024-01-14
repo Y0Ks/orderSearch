@@ -1,0 +1,47 @@
+
+.table {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.table th {
+  background-color: rgb(103, 119, 206);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 15px;
+  color: #ffffff;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.table tr {
+  background-color: rgb(206, 199, 231);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 15px;
+  color: #184291;
+  justify-content: space-between;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Hide all columns by default on mobile */
+@media screen and (max-width: 767px) {
+  .table th, .table td {
+    display: none;
+  }
+}
+
+/* Show only specific columns on mobile */
+@media screen and (max-width: 767px) {
+  .table .column-account,
+  .table .column-operation,
+  .table .column-symbol,
+  .table .column-status {
+    display: table-cell;
+  }
+}
+
+/* Show all columns on larger screens */
+@media screen and (min-width: 768px) {
+  .table th, .table td {
+    display: table-cell;
+  }
+}

@@ -1,0 +1,50 @@
+.form-control {
+  display: inline-block;
+  padding: 10px;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+select {
+  border: 1px solid #818ea7;
+  border-radius: 2px;
+  display: block;
+  font-size: 16 px;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="date"] {
+  border: 1px solid #818ea7;
+  border-radius: 2px;
+  display: block;
+  font-size: 16 px;
+  padding: 10px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: #234583;
+  color: aliceblue;
+  cursor: pointer;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+button:disabled {
+  background-color: #b0bfda;
+  color: aliceblue;
+  cursor: pointer;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}

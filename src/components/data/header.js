@@ -1,0 +1,25 @@
+export const header = [
+  'account',
+  'operation',
+  'symbol',
+  'description',
+  'qty',
+  'filledQty',
+  'price',
+  'status',
+  'date',
+  'expiration',
+  'noRef',
+  'extRef'
+  // 'firstname',
+  // 'lastname',
+  // 'code',
+  // 'location',
+  // 'netAmount',
+  // 'exchangeRate',
+  // 'osLimit',
+  // 'noRefDetail',
+  // 'dateTimeDetail',
+  // 'telephone',
+  // 'userId'
+];
