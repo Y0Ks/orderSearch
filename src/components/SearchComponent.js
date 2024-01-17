@@ -3,19 +3,19 @@ import "./SearchComponent.css";
 
 const SearchComponent = (props) => {
   console.log("render form component");
-  const [dateFrom, getDateFrom] = useState("");
-  const [dateTo, getDateTo] = useState("");
-  const [period, periodChange] = useState("transmission");
-  const [status, statusChange] = useState("waiting");
+  const [dateFrom, setDateFrom] = useState("");
+  const [dateTo, setDateTo] = useState("");
+  const [period, setPeriod] = useState("transmission");
+  const [status, setStatus] = useState("waiting");
 
   const [formValid, setFormValid] = useState(false);
 
   const dateFromChange = (event) => {
-    getDateFrom(event.target.value);
+    setDateFrom(event.target.value);
   };
 
   const dateToChange = (event) => {
-    getDateTo(event.target.value);
+    setDateTo(event.target.value);
   };
 
   const doSearch = (event) => {
@@ -33,8 +33,8 @@ const SearchComponent = (props) => {
 
   const doReset = (event) => {
     event.preventDefault();
-    getDateFrom("");
-    getDateTo("");
+    setDateFrom("");
+    setDateTo("");
     document.getElementById("seachDateFrom").value = "";
     document.getElementById("seachDateTo").value = "";
     const searchCriteria = {
@@ -63,16 +63,14 @@ const SearchComponent = (props) => {
       <form onSubmit={doSearch} onReset={doReset}>
         <div className="form-control">
           <label>Period</label>
-          <select name="searchPeriod" id="searchPeriod" onChange={periodChange}>
+          <select name="searchPeriod" id="searchPeriod" onChange={setPeriod}>
             <option value="transmission">Transaction</option>
-            <option value="cccc">cccccc</option>
           </select>
         </div>
         <div className="form-control">
           <label>Status</label>
-          <select name="searchStatus" id="searchStatus" onChange={statusChange}>
+          <select name="searchStatus" id="searchStatus" onChange={setStatus}>
             <option value="waiting">Waiting</option>
-            <option value="xxxxxxx">xxxxxxx</option>
           </select>
         </div>
         <div className="form-control">

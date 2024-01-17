@@ -4,10 +4,14 @@ import SearchComponent from "./components/SearchComponent";
 import "./App.css";
 import React, { useState } from "react";
 
+// import DataContext from "./components/data/DataContext";
+
 import { header } from "./components/data/header";
 import { detail } from "./components/data/detail";
 
 function App() {
+
+
   let [items, setItems] = useState([...detail]);
   let [resultCount, setCount] = useState(detail.length);
   const searchCriteriaItem = (object) => {

@@ -1,4 +1,5 @@
 export const header = [
+  '',
   'account',
   'operation',
   'symbol',
@@ -10,16 +11,6 @@ export const header = [
   'date',
   'expiration',
   'noRef',
-  'extRef'
-  // 'firstname',
-  // 'lastname',
-  // 'code',
-  // 'location',
-  // 'netAmount',
-  // 'exchangeRate',
-  // 'osLimit',
-  // 'noRefDetail',
-  // 'dateTimeDetail',
-  // 'telephone',
-  // 'userId'
+  'extRef',
+  ''
 ];

@@ -1,0 +1,95 @@
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: left
+}
+
+.detail-row div {
+  flex: 1; /* Each div takes equal width */
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Style for the name, code, and location section */
+  .name-code-location {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between text and button */
+  }
+  
+  /* Style for the "Full Review Detail" button */
+  .detail-button {
+    /* ... existing styles ... */
+  }
+  
+  /* Styles for the action buttons */
+  .action-buttons {
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+  }
+  
+  .accept-button, .reject-button {
+    padding: 8px 15px;
+    border: 1px solid #007bff;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+  
+  .accept-button {
+    background-color: #28a745; /* Green background for accept button */
+  }
+  
+  .accept-button:hover {
+    background-color: white;
+    color: #28a745;
+  }
+  
+  .reject-button {
+    background-color: #dc3545; /* Red background for reject button */
+  }
+  
+  .reject-button:hover {
+    background-color: white;
+    color: #dc3545;
+  }
+
+  /* Style for the warnings section */
+.warnings {
+    background-color: hsl(210deg 46.3% 81.23%);
+    padding: 10px;
+    margin-top: 10px; /* Adjust as needed */
+    text-align: left;
+    margin: 20px;
+  }
+  
+  .warnings ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+  }
+  
+  .warnings li {
+    margin-bottom: 5px; /* Space between warning messages */
+  }
+
+  .round-button {
+    background-color: #8a8eb2; /* Green background */
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%; /* Rounded shape */
+  }
+  
